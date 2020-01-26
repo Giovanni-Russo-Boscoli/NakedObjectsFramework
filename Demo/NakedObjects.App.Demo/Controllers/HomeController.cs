@@ -5,6 +5,8 @@ using System.Web.Mvc;
 using NakedObjects.Web.Mvc.Controllers;
 using NakedObjects.Web.Mvc.Models;
 
+using NakedObjects.DatabaseHelpers;
+
 namespace NakedObjects.Mvc.App.Controllers {
 
     //[Authorize]
@@ -12,6 +14,7 @@ namespace NakedObjects.Mvc.App.Controllers {
         public HomeController(INakedObjectsFramework nakedObjectsContext) : base(nakedObjectsContext) {}
 
         public ActionResult Index() {
+            //DatabaseHelpers.DatabaseUtils.
             return View();
         }
 

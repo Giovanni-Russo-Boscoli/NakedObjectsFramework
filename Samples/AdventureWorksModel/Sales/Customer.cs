@@ -16,8 +16,9 @@ namespace AdventureWorksModel {
         private ICollection<CustomerAddress> _CustomerAddress = new List<CustomerAddress>();
         public ContactRepository ContactRepository { set; protected get; }
 
-        [Disabled, Description("xxx")]
-        public virtual string AccountNumber { get; set; }
+        //[Disabled, Description("xxx")]
+        [Description("xxx")]
+        public virtual string AccountNumber { get { return "0123456"; } set { } }
 
         [Hidden(WhenTo.Always)]
         public virtual string CustomerType { get; set; }
@@ -40,6 +41,7 @@ namespace AdventureWorksModel {
 
         public override void Persisting() {
             base.Persisting();
+            this.AccountNumber = "0123456";
             this.CustomerModifiedDate = DateTime.Now;
             this.CustomerRowguid = Guid.NewGuid();
         }

@@ -66,11 +66,24 @@ namespace NakedObjects.Reflect {
             get { return IntrospectedType.Name; }
         }
 
-        public IIdentifier Identifier => identifier;
+        //public IIdentifier Identifier => identifier;
+        public IIdentifier Identifier {get;set;}
 
-        public string FullName => SpecificationType.GetProxiedTypeFullName();
+        //public string FullName => SpecificationType.GetProxiedTypeFullName();
+        public string FullName {
+            get{
+                return SpecificationType.GetProxiedTypeFullName();
+            }
+            set{}
+        }
 
-        public string ShortName => TypeNameUtils.GetShortName(SpecificationType.Name);
+        //public string ShortName => TypeNameUtils.GetShortName(SpecificationType.Name);
+        public string ShortName {
+            get {
+                return TypeNameUtils.GetShortName(SpecificationType.Name);
+            }
+            set { }
+        }
 
 
         public IList<IAssociationSpecImmutable> Fields {

@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NakedObjects.Persistor</RootNamespace>
     <AssemblyName>NakedObjects.Persistor.Test</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -83,6 +83,9 @@
     <Reference Include="NakedObjects.PMResources">
       <HintPath>..\..\packages\NakedObjects.ProgrammingModel.7.0.3\lib\net40\NakedObjects.PMResources.dll</HintPath>
     </Reference>
+    <Reference Include="NakedObjects.Reflector">
+      <HintPath>..\NakedObjects.Reflector\bin\Debug\NakedObjects.Reflector.dll</HintPath>
+    </Reference>
     <Reference Include="NakedObjects.Types">
       <HintPath>..\..\packages\NakedObjects.ProgrammingModel.7.0.3\lib\net40\NakedObjects.Types.dll</HintPath>
     </Reference>
@@ -114,10 +117,6 @@
     <ProjectReference Include="..\NakedObjects.Persistor.Test.Data\NakedObjects.Persistor.Test.Data.csproj">
       <Project>{25F3DE0C-94DA-4B32-95E5-BA4BB90DD79B}</Project>
       <Name>NakedObjects.Persistor.Test.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NakedObjects.Reflector\NakedObjects.Reflector.csproj">
-      <Project>{91153C56-313C-426E-8B0D-43FA39BD567A}</Project>
-      <Name>NakedObjects.Reflector</Name>
     </ProjectReference>
     <ProjectReference Include="..\NakedObjects.Xat\NakedObjects.Xat.csproj">
       <Project>{C818DFD4-6020-419A-8274-F59803956180}</Project>

@@ -244,5 +244,8 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.edmx.sql" />
+  </ItemGroup>
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
 </Project>

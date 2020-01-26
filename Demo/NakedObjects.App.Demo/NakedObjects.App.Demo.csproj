@@ -462,6 +462,10 @@
       <Project>{FDDBA108-8B58-40C6-A375-FFB92B1933DD}</Project>
       <Name>AdventureWorksModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Test\NakedObjects.DatabaseHelpers\NakedObjects.DatabaseHelpers.csproj">
+      <Project>{dde874ee-b28b-4577-a28a-6d35690d6310}</Project>
+      <Name>NakedObjects.DatabaseHelpers</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -478,7 +482,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60208/</IISUrl>
+          <IISUrl>http://localhost:58498/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

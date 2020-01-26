@@ -27,9 +27,9 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <ProjectGuid>{91153C56-313C-426E-8B0D-43FA39BD567A}</ProjectGuid>
+    <ProjectGuid>{DE1817CE-C749-4560-A273-3CAC2DE59F85}</ProjectGuid>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>

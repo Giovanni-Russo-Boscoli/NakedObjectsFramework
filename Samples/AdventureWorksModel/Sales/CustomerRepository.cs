@@ -108,11 +108,15 @@ namespace AdventureWorksModel {
         public IQueryable<Individual> FindIndividualCustomerByName([Optionally] string firstName, string lastName) {
             IQueryable<Contact> matchingContacts = ContactRepository.FindContactByName(firstName, lastName);
 
-            return from indv in Instances<Individual>()
+            var list = matchingContacts.ToList();
+
+            IQueryable<Individual> result = from indv in Instances<Individual>()
                 from contact in matchingContacts
                 where indv.Contact.ContactID == contact.ContactID
                 orderby indv.Contact.LastName, indv.Contact.LastName
                 select indv;
+
+            return result;
         }
 
         [FinderAction]
@@ -127,6 +131,7 @@ namespace AdventureWorksModel {
             contact.NameStyle = false;
             contact.ChangePassword(null, initialPassword, null);
             indv.Contact = contact;
+            indv.AccountNumber = "123456789";
             Persist(ref indv);
             return indv;
         }

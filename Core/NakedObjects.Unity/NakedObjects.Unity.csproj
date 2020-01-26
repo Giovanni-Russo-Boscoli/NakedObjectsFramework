@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NakedObjects.Unity</RootNamespace>
     <AssemblyName>NakedObjects.Unity</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -45,6 +45,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
     </Reference>
+    <Reference Include="NakedObjects.Reflector">
+      <HintPath>..\NakedObjects.Reflector\bin\Debug\NakedObjects.Reflector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -75,10 +78,6 @@
     <ProjectReference Include="..\NakedObjects.Persistor.Entity\NakedObjects.Persistor.Entity.csproj">
       <Project>{3e188cc2-9f88-47f1-a197-22518958ae25}</Project>
       <Name>NakedObjects.Persistor.Entity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\NakedObjects.Reflector\NakedObjects.Reflector.csproj">
-      <Project>{91153c56-313c-426e-8b0d-43fa39bd567a}</Project>
-      <Name>NakedObjects.Reflector</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
